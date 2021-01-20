@@ -1,0 +1,126 @@
+.sidebar {
+  position: absolute;
+ //mobile screen
+ .icon-container{
+  display: flex;
+  margin: 10px 20px 0 20px;
+  justify-content: space-between;
+  img {
+    padding-right: 10px;
+  }
+}
+ .bar-container{
+  display: flex;
+}
+.bar-div{
+  margin-left:250%;
+}
+.div1{
+  width: 42.1px;
+  height: 5.4px;
+  margin:5.4px 0 0 0;
+  background-color: #1d1d1d;
+}
+.div2{
+    width: 27px;
+  height: 5.4px;
+  margin: 10.8px 1.4px 0 0;
+  background-color: #1d1d1d;
+}
+.div3{
+    width: 9.7px;
+  height: 5.4px;
+  margin: 10.8px 0px 0 5.4px;
+  background-color: #1d1d1d;
+}
+.div4{
+    width: 42.1px;
+  height: 5.4px;
+  margin: 10.8px 0 0;
+  background-color: #1d1d1d;
+}
+.page-links{
+  display:none;
+}
+ }
+
+
+@media only screen and (min-width:320px)and (max-width:410px) {
+  .sidebar {
+    .bar-div{
+      margin-left:220%;
+    }
+  }
+
+}
+@media only screen and (min-width:500px)and (max-width: 760px) {
+  .sidebar {
+    .bar-div{
+       margin-left:450%;
+    }
+  }
+}
+
+@media only screen and (min-width:768px)and (max-width: 900px) {
+  .sidebar {
+    .bar-div{
+       margin-left:630%;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sidebar{
+    position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 2;
+  
+  .icon-container{
+      display: inline-flex;
+      margin-right: 20px;
+      img {
+        padding-right: 10px;
+      }
+  }
+  .page-links {
+    display: block;
+  }
+  .bar-div{
+    margin-left:0;
+  }
+  .bar-container{
+      display: flex;
+    }
+    .page-links{
+      position: absolute;
+       right: 20px;
+    }
+  ul {
+      list-style: none;
+      
+      li{
+          text-orientation: initial;
+          writing-mode: vertical-lr;
+          width: 31px;
+          height: 74px;
+          margin: 0 0 50px;
+          font-family: Lora;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.63;
+          letter-spacing: normal;
+          text-align: center;
+          color: #1d1d1d;
+      }
+     
+      a{
+        text-decoration: none;
+           
+      }
+    }
+}
+
+}
